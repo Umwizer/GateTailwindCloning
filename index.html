@@ -8,58 +8,60 @@
 </head>
 <body class="font-sans bg-gray-100">
 
-   
+    <!-- Announcement Banner -->
     <div class="bg-blue-900 text-white text-center py-3 px-4">
         <p class="text-lg">
-            <a href="#" class="underline">On Friday, February 14, 2025 the University will suspend normal operations for the Eagles victory parade</a>
+            <a href="#" class="underline">On Friday, February 14, 2025, the University will suspend normal operations for the Eagles victory parade</a>
         </p>
         <p class="text-sm mt-1">Normal operations will resume Monday, February 17, 2025</p>
     </div>
 
-   
-    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center px-6">
-          
-            <div class="flex items-center space-x-2">
-                <img src="/public/img/UPenn-logo.jpeg" alt="UPenn Logo" class="h-20">
-               
-            </div>
-
-            <nav class="hidden md:flex space-x-6 text-gray-700 font-semibold">
-                <a href="#" class="hover:text-red-700">ACADEMICS</a>
-                <a href="#" class="hover:text-red-700">ADMISSIONS & AID</a>
-                <a href="#" class="hover:text-red-700">ATHLETICS</a>
-                <a href="#" class="hover:text-red-700">RESEARCH & INNOVATION</a>
-                <a href="#" class="hover:text-red-700">LIFE AT PENN</a>
-                <a href="#" class="hover:text-red-700">ABOUT</a>
-            </nav>
-
-        
-            <button id="menu-btn" class="md:hidden text-gray-700 text-2xl">
-                ☰
-            </button>
+    <!-- Header Section -->
+    <header class="relative">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="/public/img/avian-bird-flu.jpeg" alt="UPenn Background" class="w-full h-[500px] object-cover">
         </div>
 
-        <!-- Mobile Menu (Hidden by Default) -->
-        <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-md p-4 space-y-2">
-            <a href="#" class="block text-gray-700 hover:text-red-700">ACADEMICS</a>
-            <a href="#" class="block text-gray-700 hover:text-red-700">ADMISSIONS & AID</a>
-            <a href="#" class="block text-gray-700 hover:text-red-700">ATHLETICS</a>
-            <a href="#" class="block text-gray-700 hover:text-red-700">RESEARCH & INNOVATION</a>
-            <a href="#" class="block text-gray-700 hover:text-red-700">LIFE AT PENN</a>
-            <a href="#" class="block text-gray-700 hover:text-red-700">ABOUT</a>
-        </nav>
+        <!-- Header Content -->
+        <div class="relative z-10 bg-black bg-opacity-50 text-white">
+            <div class="container mx-auto flex justify-between items-center px-6 py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="/public/img/UPenn-logo.jpeg" alt="UPenn Logo" class="h-12">
+                    <span class="text-2xl font-bold">Penn</span>
+                </div>
+
+                <!-- Navigation Bar -->
+                <nav class="hidden md:flex space-x-4 text-sm font-semibold">
+                    <a href="#" class="hover:text-red-600">ACADEMICS ▼</a>
+                    <span>/</span>
+                    <a href="#" class="hover:text-red-600">ADMISSIONS & AID ▼</a>
+                    <span>/</span>
+                    <a href="#" class="hover:text-red-600">ATHLETICS</a>
+                    <span>/</span>
+                    <a href="#" class="hover:text-red-600">RESEARCH & INNOVATION ▼</a>
+                    <span>/</span>
+                    <a href="#" class="hover:text-red-600">LIFE AT PENN ▼</a>
+                    <span>/</span>
+                    <a href="#" class="hover:text-red-600">ABOUT ▼</a>
+                </nav>
+
+                <!-- Search & Buttons -->
+                <div class="flex items-center gap-4">
+                    <button class="text-white text-xl hover:text-red-600" aria-label="Search">🔍</button>
+                    <p>Resources</p>
+                    <button class="bg-red-700 px-4 py-2 rounded-md font-semibold hover:bg-red-800">Give to Penn</button>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- JavaScript for Mobile Menu -->
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
+    <!-- Main Content -->
+    <main class="relative z-10 text-white px-8 pt-24">
+        <h3 class="text-sm uppercase font-bold">HEALTH SCIENCES</h3>
+        <h1 class="text-4xl font-bold">How Penn is helping with bird flu research and disease surveillance</h1>
+    </main>
 
 </body>
 </html>
