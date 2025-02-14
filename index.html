@@ -7,88 +7,65 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
     <header>
-        <section class="bg-[#011f5b] text-white w-full border-1 border-gray-700">
-          <div class="ml-4 md:m-14 md:ml-18">
-            <p
-              class="text-[28px] leading-[35px] text-start mb-4 eb-garamond underline hover:no-underline"
-            >
-              On Friday, February 14, 2025 the University will suspend normal
-              operations for the Eagles victory parade
+        <section class="bg-[#011f5b] text-white w-full border border-gray-700">
+          <div class="ml-4 md:ml-18 p-4 md:p-14">
+            <p class="text-[28px] leading-[35px] text-start mb-4 eb-garamond underline hover:no-underline">
+              On Friday, February 14, 2025, the University will suspend normal operations for the Eagles victory parade
             </p>
-            <span class="font-[Roboto, Helvetica, Arial, sans-serif] text-[18px]"
-              >Normal operations will resume Monday, February 17, 2025</span
-            >
+            <span class="font-sans text-[18px]">
+              Normal operations will resume Monday, February 17, 2025
+            </span>
           </div>
         </section>
       </header>
-
-
-  <section class="w-full relative bg-black/90">
-    <div class="absolute">
-      <img class="h-[60vw]" src="public/img/avian-bird-flu.jpeg" alt="" />
-    </div>
-    <nav class="relative p-10 flex justify-between">
-      <div class="">
-        <img class="" src="public/img/UPenn-logo.jpeg" alt="" />
-      </div>
-     
-      <div class="">
       
-        <div class="text-white text-[12px] mb-4">
-          <ul class="tracking-[1px] flex justify-end gap-10 uppercase">
-            <li class="mt-4">Search</li>
-            <li class="mt-4">Resources</li>
-            <button class="bg-[#990000] p-4 uppercase">give to penn</button>
-          </ul>
+      <section class="relative w-full bg-cover bg-center" style="background-image: url('/public/img/avian-bird-flu.jpeg');">
+        
+        <nav class="relative p-10 flex justify-between items-center">
+          <div>
+            <img class="h-10 md:h-16" src="public/img/UPenn-logo.jpeg" alt="UPenn Logo" />
+          </div>
+          <div>
+            <ul class="flex justify-end gap-10 uppercase text-white text-[12px] tracking-[1px]">
+              <li class="mt-4">Search</li>
+              <li class="mt-4">Resources</li>
+              <button class="bg-[#990000] px-6 py-3 uppercase hover:bg-red-800 transition">
+                Give to Penn
+              </button>
+            </ul>
+            <div class="border-t border-gray-100 my-2"></div>
+            <ul class="flex justify-end gap-8 uppercase text-white text-[14px] leading-[26px] tracking-[1px]">
+              <li>Academics</li>
+              <li>Admissions & Aid</li>
+              <li>Athletics</li>
+              <li>Research & Innovation</li>
+              <li>Life at Penn</li>
+              <li>About</li>
+            </ul>
+          </div>
+        </nav>
+      
+        <div class="relative text-white ml-10 mt-24">
+          <div class="max-w-[50vw] cursor-pointer intro-show">
+            <h3 class="uppercase text-[18px] tracking-[1.8px] leading-[26px] font-medium">
+              Health Sciences
+            </h3>
+            <p class="text-[48px] leading-[56px] font-serif">
+              How Penn is helping with bird flu research and disease surveillance
+            </p>
+            <span class="w-12 border-2 border-gray-400 block mt-2"></span>
+          </div>
+      
+          <div class="intro-hidden mt-4 max-w-[50vw] h-auto">
+            <p class="text-[18px]">
+              Faculty are working on a new vaccine for the H5N1 virus, studying its transmission, and helping the state test samples from birds and mammals.
+            </p>
+          </div>
         </div>
-        <div class="border-[0.00002px] border-gray-100"></div>
-       
-        <div class="">
-          <ul
-            class="m-2 flex justify-end gap-8 uppercase text-white text-[14px] leading-[26px] tracking-[1px]"
-          >
-            <li>academics</li>
-            /
-            <li>admissions & aid</li>
-            /
-            <li>athletics</li>
-            /
-            <li>research & innovation</li>
-            /
-            <li>life at penn</li>
-            /
-            <li>about</li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Intro message -->
-    <div class="relative text-white ml-10 mt-24">
-      <div class="w-full md:w-[50vw] cursor-pointer intro-show">
-        <h3
-          class="uppercase text-[18px] tracking-[1.8px] leading-[26px] text-start poppins-medium"
-        >
-          health sciences
-        </h3>
-        <p
-          class="text-[48px] tracking-normal leading-[56px] text-start eb-garamond"
-        >
-          How Penn is helping with bird flu research and disease surveillance
-        </p>
-        <span class="w-12 border-2 border-gray-400 flex"></span>
-      </div>
-      <!-- Hidden div -->
-      <div class="intro-hidden mt-4 w-full md:w-[50vw] h-[29.2vw]">
-        <p class="text-[18px]">
-          Faculty are working on a new vaccine for the H5N1 virus, studying
-          its transmission, and helping the state test samples from birds and
-          mammals.
-        </p>
-      </div>
-    </div>
-  </section>
+      
+      </section>
+      
 
   <section class="mt-[100px] px-7">
     <div class="flex justify-between">
