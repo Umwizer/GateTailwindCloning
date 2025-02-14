@@ -19,52 +19,63 @@
           </div>
         </section>
       </header>
-      
       <section class="relative w-full bg-cover bg-center" style="background-image: url('/public/img/avian-bird-flu.jpeg');">
-        
-        <nav class="relative p-10 flex justify-between items-center">
+        <nav class="relative p-4 md:p-10 flex justify-between items-center">
           <div>
-            <img class="h-10 md:h-16" src="public/img/UPenn-logo.jpeg" alt="UPenn Logo" />
+            <img class="h-10 md:h-16" src="/public/img/UPenn-logo.jpeg" alt="UPenn Logo" />
           </div>
-          <div>
-            <ul class="flex justify-end gap-10 uppercase text-white text-[12px] tracking-[1px]">
-              <li class="mt-4">Search</li>
-              <li class="mt-4">Resources</li>
+          <div class="hidden md:flex space-x-8 uppercase text-white text-sm tracking-wide">
+            <a href="#" class="mt-4">Search</a>
+            <a href="#" class="mt-4">Resources</a>
+            <button class="bg-[#990000] px-6 py-3 uppercase hover:bg-red-800 transition">
+              Give to Penn
+            </button>
+          </div>
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+             
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden">
+          <ul class="flex flex-col items-center space-y-4 uppercase text-white text-sm tracking-wide">
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Resources</a></li>
+            <li>
               <button class="bg-[#990000] px-6 py-3 uppercase hover:bg-red-800 transition">
                 Give to Penn
               </button>
-            </ul>
-            <div class="border-t border-gray-100 my-2"></div>
-            <ul class="flex justify-end gap-8 uppercase text-white text-[14px] leading-[26px] tracking-[1px]">
-              <li>Academics</li>
-              <li>Admissions & Aid</li>
-              <li>Athletics</li>
-              <li>Research & Innovation</li>
-              <li>Life at Penn</li>
-              <li>About</li>
-            </ul>
-          </div>
-        </nav>
-      
-        <div class="relative text-white ml-10 mt-24">
-          <div class="max-w-[50vw] cursor-pointer intro-show">
-            <h3 class="uppercase text-[18px] tracking-[1.8px] leading-[26px] font-medium">
-              Health Sciences
-            </h3>
-            <p class="text-[48px] leading-[56px] font-serif">
-              How Penn is helping with bird flu research and disease surveillance
-            </p>
-            <span class="w-12 border-2 border-gray-400 block mt-2"></span>
-          </div>
-      
-          <div class="intro-hidden mt-4 max-w-[50vw] h-auto">
-            <p class="text-[18px]">
-              Faculty are working on a new vaccine for the H5N1 virus, studying its transmission, and helping the state test samples from birds and mammals.
-            </p>
-          </div>
+            </li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Admissions & Aid</a></li>
+            <li><a href="#">Athletics</a></li>
+            <li><a href="#">Research & Innovation</a></li>
+            <li><a href="#">Life at Penn</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
         </div>
-      
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex justify-end space-x-8 uppercase text-white text-sm tracking-wide mt-4">
+          <a href="#">Academics</a>
+          <a href="#">Admissions & Aid</a>
+          <a href="#">Athletics</a>
+          <a href="#">Research & Innovation</a>
+          <a href="#">Life at Penn</a>
+          <a href="#">About</a>
+        </div>
       </section>
+      
+      <script>
+       
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+          const menu = document.getElementById('mobile-menu');
+          menu.classList.toggle('hidden');
+        });
+      </script>
       
 
   <section class="mt-[100px] px-7">
@@ -149,28 +160,37 @@
       </div>
     </div>
   </section>
+  <!--campus & community section -->
   <section
-      class="mt-11 flex bg-[url('https://www.upenn.edu/sites/default/files/styles/crop_2x1/public/2025-01/penn-center-innovation.jpg?h=92c5d8ae&itok=3O1cAYdA')] p-7 px-11 py-7 text-white"
-    >
-      <div
-        class="w-[45%] bg-[url('https://www.upenn.edu/themes/custom/penn_global/assets/img/blue-pattern-bg.png')] p-6"
-      >
-      <div class="flex flex-col space-y-11 border-1 border-blue-200 p-11">
-      <p class="text-center">Campus  & Community</p>
-      <div class="flex flex-col self-center text-3xl hover:underline">
-        <p class="">Penn Center for Innovation Celebrates</p>
-        <p class="self-center">10 Years </p>
+  class="mt-11 flex flex-col md:flex-row bg-[url('https://www.upenn.edu/sites/default/files/styles/crop_2x1/public/2025-01/penn-center-innovation.jpg?h=92c5d8ae&itok=3O1cAYdA')] 
+         bg-cover bg-center p-7 text-white"
+>
+  <div
+    class="w-full md:w-[45%] bg-[url('https://www.upenn.edu/themes/custom/penn_global/assets/img/blue-pattern-bg.png')] 
+           bg-cover p-6"
+  >
+    <div class="flex flex-col space-y-6 border border-blue-200 p-6 md:p-11">
+      <p class="text-center text-lg md:text-xl">Campus & Community</p>
+      <div class="flex flex-col self-center text-2xl md:text-3xl hover:underline text-center">
+        <p>Penn Center for Innovation Celebrates</p>
+        <p class="self-center">10 Years</p>
       </div>
-      <p class="w-[25px] self-center border-3 border-gray-500 text-center "></p>
-      <p class="self-center">
-        The University's nexus for Technology transfer supports researchers in their 
-        innovative efforts,From Car To mRNA advancements that have dramatically reshaped the world</p>
-        <p class="inline-block self-center rounded-3xl border-[0.4px] border-gray-200 px-11 py-5 text-left font-bold
-        transition-all hover:bg-white hover:text-red-700">LEARN MORE</p>
-      </div>
-      </div>
-      <div class="w-[55%]"></div>
-      </section>
+      <div class="w-10 border-t-4 border-gray-500 mx-auto"></div>
+      <p class="text-center text-sm md:text-base">
+        The University's nexus for technology transfer supports researchers in their 
+        innovative efforts, from CAR-T to mRNA advancements that have dramatically reshaped the world.
+      </p>
+      <p class="inline-block self-center rounded-3xl border border-gray-200 px-6 py-3 md:px-11 md:py-5 text-left font-bold
+         transition-all hover:bg-white hover:text-red-700 text-sm md:text-base">
+        LEARN MORE
+      </p>
+    </div>
+  </div>
+  
+  <div class="w-full md:w-[55%]"></div>
+</section>
+
+     
       <div class="events border-3 border-amber-500 p-8">
         <h1 class="eb-garamond text-5xl font-light text-[#0115F5B]">Upcoming Events</h1>
         <div class="mt-4 h-[-5px] w-[40px] bg-[#9BA5BE]"></div>
