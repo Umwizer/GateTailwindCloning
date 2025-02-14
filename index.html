@@ -7,124 +7,324 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="relative bg-cover bg-center min-h-screen flex items-center px-4 md:px-16 text-white"
-    style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/src/imgs/3.jpeg');">
-    
-    <div class="max-w-3xl text-center md:text-left">
-        <h1 class="text-3xl md:text-5xl font-bold">How Penn is helping with bird flu research</h1>
-        <p class="mt-3 text-lg md:text-xl">Research and disease surveillance</p>
+
+    <header
+    class="bg-[url('https://www.upenn.edu/themes/custom/penn_global/assets/img/blue-pattern-bg.png')] p-3 text-white"
+  >
+    <div class="space-y-3 border border-blue-800 px-32 py-11">
+      <p class="text-xl font-bold underline">
+        On Friday, February 14, 2025 the University will suspend normal
+        operations for the Eagles victory parade
+      </p>
+      <p class="text-lg font-semibold">
+        Normal operations will resume Monday, February 17, 2025
+      </p>
     </div>
-</header>
+  </header>
 
-<!-- Navbar -->
-<nav class="fixed top-[200px] left-0 w-full bg-blue-950 text-white px-6 py-4 z-50 shadow-md">
-    <div class="flex justify-between items-center">
-        <!-- Logo -->
-        <img src="/public/img/UPenn-logo.jpeg" class="w-16 h-16 md:w-20 md:h-20" alt="Logo">
-        
-       
-        <ul class="hidden md:flex space-x-6">
-            <li><a href="#" class="font-bold text-white">ACADEMICS</a></li>
-            <li><a href="#" class="font-bold text-white">ADMISSIONS & AID</a></li>
-            <li><a href="#" class="font-bold text-white">ATHLETICS</a></li>
-            <li><a href="#" class="font-bold text-white">RESEARCH & INNOVATION</a></li>
-            <li><a href="#" class="font-bold text-white">LIFE AT PENN</a></li>
-            <li><a href="#" class="font-bold text-white">ABOUT</a></li>
-        </ul>
+  <section class="h-[650px] bg-[url('img/bird.avif')] text-white">
+    <nav>
+      <div
+        class="border- flex h-[100px] items-center justify-between border-b-white px-11 py-3"
+      >
+        <img src="public/img/UPenn-logo.jpeg" />
 
-        <button id="menu-toggle" class="md:hidden text-white text-2xl">
-            <ion-icon name="menu-outline"></ion-icon>
-        </button>
+        <di v class="flex items-center justify-between gap-11">
+          <p class="text-2xl">
+            <ion-icon name="search-outline"></ion-icon>
+          </p>
+
+          <div class="justify-bet flex items-center gap-1">
+            <p>Resources</p>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+
+          <button class="bg-red-800 px-4 py-2 text-white">
+            GIVE TO PENN
+          </button>
+        </di>
+      </div>
+
+      <div class="flex justify-end gap-5 px-11">
+        <p>Academics</p>
+        <p>Admissions & Aid</p>
+        <p>Athletics</p>
+        <p>Research & Innovation</p>
+        <p>Life at Penn</p>
+        <p>About</p>
+      </div>
+    </nav>
+
+    <div class="mt-[100px]">
+      <h1>Health Sciences</h1>
+      <p>
+        How Penn is helping with bird flu research and disease surveillance
+      </p>
+    </div>
+  </section>
+
+  <section class="mt-[100px] px-7">
+    <div class="flex justify-between">
+      <h1 class="inline-block border-b-5 border-b-gray-600">News</h1>
+      <div class="flex gap-[100px] border-b border-gray-400">
+        <p>Topics</p>
+        <p>
+          <ion-icon name="caret-down-outline"></ion-icon>
+        </p>
+      </div>
     </div>
 
-    <ul id="mobile-menu" class="hidden flex-col mt-4 space-y-3 text-center bg-blue-900 py-4">
-        <li><a href="#" class="block py-2">ACADEMICS</a></li>
-        <li><a href="#" class="block py-2">ADMISSIONS & AID</a></li>
-        <li><a href="#" class="block py-2">ATHLETICS</a></li>
-        <li><a href="#" class="block py-2">RESEARCH & INNOVATION</a></li>
-        <li><a href="#" class="block py-2">LIFE AT PENN</a></li>
-        <li><a href="#" class="block py-2">ABOUT</a></li>
-    </ul>
-</nav>
+    <div class="mt-[50px] flex">
+      <div
+        class="flex w-[40%] flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
+      >
+        <img src="public/img/pavilion-gift-teaser (1).jpeg" />
+        <h1 class="text-center text-red-600 hover:underline">
+          Health Sciences
+        </h1>
+        <p class="px-6 text-blue-600 hover:underline">
+          Catherine and Anthony Clifton make transformational gift to
+          accelerate patient care, research, and educati on at Penn Medicine
+        </p>
+        <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
+        <p class="mt-auto w-full self-center border border-gray-300"></p>
+      </div>
 
-
-<script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-    });
-</script>
-<section class="mt-16 px-4 md:px-16">
-    <div class="flex flex-col md:flex-row justify-between">
-        <h1 class="border-b-4 border-gray-600 pb-2 text-2xl md:text-3xl">News</h1>
-        <div class="flex items-center gap-4 border-b border-gray-400">
-            <p class="text-sm md:text-lg">Topics</p>
-            <ion-icon name="caret-down-outline" class="text-xl"></ion-icon>
-        </div>
-    </div>
-
-    <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- News Item -->
-        <div class="flex flex-col border rounded-lg overflow-hidden shadow-md">
-            <img src="public/img/pavilion-gift-teaser.jpeg" class="w-full h-48 md:h-64 object-cover">
-            <div class="p-4">
-                <h2 class="text-red-600 text-center text-lg hover:underline">Health Sciences</h2>
-                <p class="text-blue-600 text-sm md:text-base hover:underline">
-                    Catherine and Anthony Clifton make transformational gift to accelerate patient care.
-                </p>
-            </div>
-        </div>
-
-        <!-- More News Items -->
-        <div class="flex flex-col border rounded-lg overflow-hidden shadow-md">
-            <img src="public/img/epstein-jon-teaser.jpeg" class="w-full h-48 md:h-64 object-cover">
-            <div class="p-4">
-                <h2 class="text-red-600 text-center text-lg hover:underline">Health Sciences</h2>
-                <p class="text-blue-600 text-sm md:text-base hover:underline">
-                    Jonathan A. Epstein named head of Perlman School of Medicine.
-                </p>
-            </div>
-        </div>
-
-        <div class="flex flex-col border rounded-lg overflow-hidden shadow-md">
-            <img src="public/img/america-250-teaser-social-main.jpeg" class="w-full h-48 md:h-64 object-cover">
-            <div class="p-4">
-                <h2 class="text-red-600 text-center text-lg hover:underline">Arts & Humanities</h2>
-                <p class="text-blue-600 text-sm md:text-base hover:underline">
-                    Penn prepares to mark America’s 250th birthday.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="p-8 bg-white">
-    <h2 class="text-2xl md:text-4xl font-serif text-blue-900 mb-6 border-b border-gray-300 pb-2">
-        Upcoming Events
-    </h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="flex flex-col items-center bg-gray-100 rounded-lg shadow-md overflow-hidden">
-            <img src="public/img/grad-center-locust-walk.jpeg" class="w-full h-40 md:h-48 object-cover">
-            <div class="p-4 text-center">
-                <span class="bg-red-700 text-white px-3 py-1 text-sm rounded">FEB 18</span>
-            </div>
-        </div>
-
-        <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-            <span class="text-sm font-semibold text-gray-500 uppercase">Special Events</span>
-            <h3 class="text-lg md:text-2xl font-serif text-blue-900 mt-2 mb-4">Historic Pennsylvania Hospital Tour</h3>
-            <p class="text-gray-600 text-sm md:text-base">
-                Holman Biotech Commons hosts a public tour of Pennsylvania Hospital, the nation’s first hospital.
-                <span class="font-semibold">Registration is required.</span>
+      <div class="w-[60%] pb-5">
+        <div class="grid grid-cols-2 divide-x divide-gray-300">
+          <div class="flex flex-col space-y-3 px-7 pb-3">
+            <img src="/public/img/epstein-jon-teaser.jpeg" />
+            <h1 class="text-center text-red-600 hover:underline">
+              Health Sciences
+            </h1>
+            <p class="px-6 text-blue-600 hover:underline">
+              Jonathan A.Epstein named head of Perlman School of Medecine and Penn Health System
             </p>
-            <div class="mt-4">
-                <span class="bg-red-700 text-white px-3 py-1 text-sm rounded">FEB 19</span>
-            </div>
+            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
+            <p class="mt-auto w-full self-center border border-gray-300"></p>
+          </div>
+          <div class="flex flex-col space-y-3 px-7 pb-3">
+            <img src="/public/img/america-250-teaser-social-main.jpeg" />
+            <h1 class="text-center text-red-600 hover:underline">
+             Arts,HUMANITIES,& Social Sciences 
+            </h1>
+            <p class="px-6 text-blue-600 hover:underline">
+              Penn Prepares to mark America's 250th birthday
+            </p>
+            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
+            <p class="mt-auto w-full self-center border border-gray-300"></p>
+          </div>
+          <div class="flex flex-col space-y-3 px-7 pb-3">
+            <img src="public/img/america-250-teaser-social-main.jpeg" />
+            <h1 class="text-center text-red-600 hover:underline">
+              Arts,HUMANITIES, & Social Sciences
+            </h1>
+            <p class="px-6 text-blue-600 hover:underline">
+              A rare on-campus assignment for preservation
+              students holds'small revelation'
+            </p>
+            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
+            <p class="mt-auto w-full self-center border border-gray-300"></p>
+          </div>
+          <div class="flex flex-col space-y-3 px-7 pb-3">
+            <img src="public/img/preservation-campus-teaser.jpeg" />
+            <h1 class="text-center text-red-600 hover:underline">
+              Science & Technology 
+            </h1>
+            <p class="px-6 text-blue-600 hover:underline">
+              Vanessa Chan bridges the gap between Innovation and the market
+            </p>
+            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
+            <p class="mt-auto w-full self-center border border-gray-300"></p>
+          </div>
         </div>
+
+        <p class="mt-7 text-center text-red-600 hover:underline">
+          MORE NEWS VIA PENN TODAY
+        </p>
+      </div>
     </div>
-</div>
+  </section>
+  <section
+      class="mt-11 flex bg-[url('https://www.upenn.edu/sites/default/files/styles/crop_2x1/public/2025-01/penn-center-innovation.jpg?h=92c5d8ae&itok=3O1cAYdA')] p-7 px-11 py-7 text-white"
+    >
+      <div
+        class="w-[45%] bg-[url('https://www.upenn.edu/themes/custom/penn_global/assets/img/blue-pattern-bg.png')] p-6"
+      >
+      <div class="flex flex-col space-y-11 border-1 border-blue-200 p-11">
+      <p class="text-center">Campus  & Community</p>
+      <div class="flex flex-col self-center text-3xl hover:underline">
+        <p class="">Penn Center for Innovation Celebrates</p>
+        <p class="self-center">10 Years </p>
+      </div>
+      <p class="w-[25px] self-center border-3 border-gray-500 text-center "></p>
+      <p class="self-center">
+        The University's nexus for Technology transfer supports researchers in their 
+        innovative efforts,From Car To mRNA advancements that have dramatically reshaped the world</p>
+        <p class="inline-block self-center rounded-3xl border-[0.4px] border-gray-200 px-11 py-5 text-left font-bold
+        transition-all hover:bg-white hover:text-red-700">LEARN MORE</p>
+      </div>
+      </div>
+      <div class="w-[55%]"></div>
+      </section>
+      <div class="events border-3 border-amber-500 p-8">
+        <h1 class="eb-garamond text-5xl font-light text-[#0115F5B]">Upcoming Events</h1>
+        <div class="mt-4 h-[-5px] w-[40px] bg-[#9BA5BE]"></div>
+        <div class="mt-12 flex w-full justify-between">
+            <div class="relative w-[30%]">
+                <div><img
+                    src="https://penntoday.upenn.edu/sites/default/files/styles/event_large/public/2022-12/grad-center-locust-walk.jpg?h=56d0ca2e&itok=JXdJNEtf"
+                    alt=""
+                  /> </div>
+                  <div class="absolute top-[-5%] left-[75%]">
+                    <div class="w-[-50px] border-2 border-transparent bg-[#990001] text-center text-white">
+                        FEB
+                    </div>
+                    <div class="h-[-50px] w-[-50px] border-2 border-transparent bg-white text-center text-2xl shadow-2xl">18</div>
+                  </div>
+                  <div class="mt-4" ><h1 class="eb-garamond text-[22px] font-light text-[#011F5B] hover:underline">
+                Managing Presentation Anxiety
+                  </h1>
+                <p class="leading-7 font-light text-[#011F5B]"> Communication within
+                    the Curriculum Associate Director Sue Weber offer tips and tricks to control
+                    Anxiety during public speaking. A penn graduate student ID is required  
+                </p></div>
+            </div>
+            <div
+            class="h-[500px] w-[10px] border-r-1 border-gray-400 bg-gradient-to-b"
+          ></div>
+  
+          <div class="flex w-[30%] gap-4">
+            <div class="relative border-2 border-transparent bg-[#F3F3F4] p-4">
+              <div class="mt-18">
+                <p class="text-sm">SPECIAL EVENTS</p>
+                <div class="mt-2 h-[5px] w-[20px] bg-[#9BA5BE]"></div>
+              </div>
+              
+            <div class="absolute top-[5%] left-[76%]">
+                <div
+                  class="w-[50px] border-2 border-transparent bg-[#990001] text-center text-white"
+                >
+                  FEB
+                </div>
+                <div
+                  class="h-[50px] w-[50px] border-2 border-transparent bg-white text-center text-2xl shadow-2xl"
+                >
+                  19
+                </div>
+              </div>
+  
+              <p
+                class="eb-garamond mt-6 text-2xl font-light text-[#011F5B] hover:underline"
+              >
+                Historic Pennsylvania Hospital Tour
+              </p>
+              <p class="mt-2 leading-7 font-light text-[#011F5B]">
+                Holman Biotech Commons hosts a public tour of Pennsylvania
+                Hospital, the nation's first hospital. Attendees will tour the
+                Great Court, Historic Library, and Surgical Amphitheatre.
+                Registration is required.
+              </p>
+            </div>
+            <div class="h-[500px] w-[10px] border-r-1 border-gray-400"></div>
+        </div>
+
+        <div
+          class="relative w-[30%] border-2 border-transparent bg-[#F3F3F4] p-4"
+        >
+          <div class="mt-18">
+            <p class="text-sm">TALKS</p>
+            <div class="mt-2 h-[5px] w-[20px] bg-[#9BA5BE]"></div>
+          </div>
+          <div class="absolute top-[5%] left-[76%]">
+            <div
+              class="w-[50px] border-2 border-transparent bg-[#990001] text-center text-white"
+            >
+              FEB
+            </div>
+            <div
+              class="h-[50px] w-[50px] border-2 border-transparent bg-white text-center text-2xl shadow-2xl"
+            >
+              20
+            </div>
+          </div>
+
+          <p
+            class="eb-garamond mt-6 text-xl text-[22px] font-light text-[#011F5B] hover:underline"
+          >
+            Jesse Rothstein
+          </p>
+          <p class="mt-2 leading-7 font-light text-[#011F5B]">
+            Jesse Rothstein, a professor of public policy and economics at the
+            University of California, Berkeley, hosts a seminar about the role
+            of social safety net programs in college student success.
+          </p>
+        </div>
+      </div>
+
+      <div class="moreevents mt-18 text-sm text-[#011F5B] uppercase">
+        <p>more events via penn today</p>
+      </div>
+    </div>
+    <!-- Support section☑️ -->
+    <section
+      class="flex w-full justify-around border-4 border-red-500 bg-blue-700"
+    >
+      <div
+        class="group my-20 w-full bg-[#f2f2f2] p-3 text-[#011f5b] md:w-[40vw]"
+      >
+        <div class="mx-auto border border-gray-300 bg-[#f2f2f2] p-10">
+          <img
+            class="mx-auto w-[30vw]"
+            src="/images/Inspiring-Impact-Campaign-Logo.png"
+            alt=""
+          />
+          <span
+            class="m-4 mx-auto flex w-10 border border-gray-400 text-center"
+          ></span>
+          <p
+            class="mt-12 mb-10 text-center text-[17px] leading-[28px] tracking-normal"
+          >
+            Your support ignites change locally and globally, transforming Penn
+            into a powerful engine that advances knowledge for society's
+            greatest good.
+          </p>
+          <button
+            class="m-6 mx-auto flex rounded-[32px] border border-gray-700 p-4 pl-4 text-[12px] leading-[15.6px] font-bold tracking-[1.8px] uppercase hover:bg-[#011f5b] hover:text-white"
+          >
+            support penn
+          </button>
+        </div>
+      </div>
+      <div class="peer my-20 w-full bg-[#011f5b] p-3 text-white md:w-[40vw]">
+        <div class="mx-auto border border-gray-700 bg-[#011f5b] p-10">
+          <h1
+            class="eb-garamond text-center text-[34px] leading-[42px] tracking-normal hover:underline"
+          >
+            Supporting Our Community
+          </h1>
+          <span
+            class="m-4 mx-auto flex w-10 border border-gray-400 text-center"
+          ></span>
+          <p
+            class="mt-12 mb-10 text-center text-[17px] leading-[28px] tracking-normal"
+          >
+            During these challenging times, Penn remains committed to supporting
+            students, faculty, and staff and to sharing information with our
+            larger community of alumni, parents, and friends.
+          </p>
+          <button
+            class="m-6 mx-auto flex rounded-[32px] border border-gray-700 p-4 pl-4 text-[12px] leading-[15.6px] font-bold tracking-[1.8px] uppercase hover:bg-white hover:text-[#990000]"
+          >
+            learn more
+          </button>
+        </div>
+      </div>
+    </section>
+        
+        </div>
+      </div>
+<script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
