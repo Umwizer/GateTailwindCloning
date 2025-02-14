@@ -6,59 +6,157 @@
     <title>UPenn Clone</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans bg-gray-100">
-
-    <!-- Announcement Banner -->
-    <div class="bg-blue-900 text-white text-center py-3 px-4">
-        <p class="text-lg">
-            <a href="#" class="underline">On Friday, February 14, 2025, the University will suspend normal operations for the Eagles victory parade</a>
+<header
+      class="bg-[url('https://www.upenn.edu/themes/custom/penn_global/assets/img/blue-pattern-bg.png')] p-3 text-white"
+    >
+      <div class="space-y-3 border border-blue-800 px-32 py-11">
+        <p class="text-xl font-bold underline">
+          On Friday, February 14, 2025 the University will suspend normal
+          operations for the Eagles victory parade
         </p>
-        <p class="text-sm mt-1">Normal operations will resume Monday, February 17, 2025</p>
-    </div>
-
-    <!-- Header Section -->
-    <header class="relative">
-        
-        <div class="absolute inset-0">
-            <img src="/public/img/avian-bird-flu.jpeg" alt="UPenn Background" class="w-full h-[500px] object-cover">
-        </div>
-
-        <!-- Header Content -->
-        <div class="relative z-10 bg-black bg-opacity-50 text-white">
-            <div class="  container mx-auto flex justify-between items-center px-6 py-4">
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <img src="/public/img/UPenn-logo.jpeg" alt="UPenn Logo" class="h-12">
-                    <!-- <span class="text-2xl font-bold">Penn</span> -->
-                </div>
-                <div class="flex items-center gap-4 pt-3 pb-3 pr-3">
-                  <button class="text-white text-xl hover:text-red-600" aria-label="Search">🔍</button>
-                  <p>Resources</p>
-                  <button class="bg-red-700 px-4 py-2 rounded-md font-semibold hover:bg-red-800">Give to Penn</button>
-              </div>
-              </div>
-                <!-- Navigation Bar -->
-                <nav class="hidden md:flex space-x-4 text-sm font-semibold">
-                    <a href="#" class="hover:text-red-600">ACADEMICS ▼</a>
-                    <span>/</span>
-                    <a href="#" class="hover:text-red-600">ADMISSIONS & AID ▼</a>
-                    <span>/</span>
-                    <a href="#" class="hover:text-red-600">ATHLETICS</a>
-                    <span>/</span>
-                    <a href="#" class="hover:text-red-600">RESEARCH & INNOVATION ▼</a>
-                    <span>/</span>
-                    <a href="#" class="hover:text-red-600">LIFE AT PENN ▼</a>
-                    <span>/</span>
-                    <a href="#" class="hover:text-red-600">ABOUT ▼</a>
-                </nav>
-                </div>
+        <p class="text-lg font-semibold">
+          Normal operations will resume Monday, February 17, 2025
+        </p>
+      </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="relative z-10 text-white px-8 pt-24">
-        <h3 class="text-sm uppercase font-bold">HEALTH SCIENCES</h3>
-        <h1 class="text-4xl font-bold">How Penn is helping with bird flu research and disease surveillance</h1>
-    </main>
+    <section class="bg-[url('img/bird.avif')] text-white">
+      <nav>
+        <div
+          class="border- flex h-[100px] items-center justify-between border-b-white px-11 py-3"
+        >
+          <img src="/public/img/UPenn-logo.jpeg" />
+
+          <di v class="flex items-center justify-between gap-11">
+            <p class="text-2xl">
+              <ion-icon name="search-outline"></ion-icon>
+            </p>
+
+            <div class="justify-bet flex items-center gap-1">
+              <p>Resources</p>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+
+            <button class="bg-red-800 px-4 py-2 text-white">
+              GIVE TO PENN
+            </button>
+          </di>
+        </div>
+
+        <div class="flex justify-end gap-5 px-11">
+          <p>Academics</p>
+          <p>Admissions & Aid</p>
+          <p>Athletics</p>
+          <p>Research & Innovation</p>
+          <p>Life at Penn</p>
+          <p>About</p>
+        </div>
+      </nav>
+
+      <div class="mt-[100px]">
+        <h1>Health Sciences</h1>
+        <p>
+          How Penn is helping with bird flu research and disease surveillance
+        </p>
+      </div>
+    </section>
+
+    <section class="mt-[100px] px-7">
+      <div class="flex justify-between">
+        <h1 class="inline-block border-b-5 border-b-gray-600">News</h1>
+        <div class="flex gap-[100px] border-b border-gray-400">
+          <p>Topics</p>
+          <p>
+            <ion-icon name="caret-down-outline"></ion-icon>
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-[50px] flex gap-20">
+        <div
+          class="flex w-[40%] flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
+        >
+          <img src="public/img/pavilion-gift-teaser (1).jpeg" />
+          <h1 class="text-center text-red-600 hover:underline">
+            Health Sciences
+          </h1>
+          <p class="px-6 text-blue-600 hover:underline">
+            Catherine and Anthony Clifton make transformational gift to
+            accelerate patient care, research, and educati on at Penn Medicine
+          </p>
+          <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
+          <p class="mt-auto w-full self-center border border-gray-300"></p>
+        </div>
+
+        <div class="grid w-[60%] grid-cols-2">
+          <div
+          class="flex flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
+        >
+          <img src="/public/img/epstein-jon-teaser.jpeg" />
+          <h1 class="text-center text-red-600 hover:underline">
+            Health Sciences
+          </h1>
+          <p class="px-6 text-blue-600 hover:underline">
+           Jonathan A.Epstein named head of perlman School of Medecine and Penn Health System
+          </p>
+          <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
+          <p class="mt-auto w-full self-center border border-gray-300"></p>
+        </div>
+          <div
+            class="flex flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
+          >
+            <img src="public/img/america-250-teaser-social-main.jpeg" />
+            <h1 class="text-center text-red-600 hover:underline">
+              Arts , Humanities , & Social Sciences
+            </h1>
+            <p class="px-6 text-blue-600 hover:underline">
+              Penn Prepares to mark America's 250th Birthday 
+            </p>
+            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
+            <p class="mt-auto w-full self-center border border-gray-300"></p>
+          </div>
+         
+          <div
+            class="flex flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
+          >
+            <img src="public/img/preservation-campus-teaser.jpeg" />
+            <h1 class="text-center text-red-600 hover:underline">
+              Arts, Humanities , & Social Science
+            </h1>
+            <p class="px-6 text-blue-600 hover:underline">
+             A rare on-campus assignment for preservation students holds'small revelations'
+            </p>
+            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
+            <p class="mt-auto w-full self-center border border-gray-300"></p>
+          </div>
+          <div
+            class="flex flex-col space-y-3 border-x-1 border-gray-500 px-7 pb-3"
+          >
+            <img src="public/img/chan-vanessa-teaser.jpeg" />
+            <h1 class="text-center text-red-600 hover:underline">
+              Sciences & Technology 
+            </h1>
+            <p class="px-6 text-blue-600 hover:underline">
+              Vanessa Chan  bridges the gap between Innovation and the market
+            </p>
+            <p class="flex w-[25px] self-center border-3 border-gray-500"></p>
+            <p class="mt-auto w-full self-center border border-gray-300"></p>
+          </div>
+          <div>
+            <h1 class="text-center text-red-600 hover:underline">More News Via Penn Today</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
 </body>
 </html>
